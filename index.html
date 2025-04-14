@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter-card">
+    <div class="status-bar">
+      <div id="currentTime">--:--</div>
+      <div class="status-icons">
+        <span class="signal">📶</span>
+        <span class="wifi">📡</span>
+        <span class="battery" id="batteryLevel">🔋 --%</span>
+      </div>
+    </div>
+    
+    <div class="input-row">
+        <h2>Temperature Converter</h2>
+    <label for="degrees">Degrees</label>
+      <input type="number" id="degrees" placeholder="Enter degrees">
+      <label for="fromType">Type</label>
+      <select id="fromType">
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Kelvin">Kelvin</option>
+      </select>
+    </div>
+    <div class="results">
+      <p id="result1">--</p>
+      <p id="result2">--</p>
+    </div>
+
+    <button onclick="convertTemp()">Convert</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
